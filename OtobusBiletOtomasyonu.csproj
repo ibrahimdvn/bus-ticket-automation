@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16040B47-36CF-4C3E-9807-BE7793B2BD5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OtobusBiletOtomasyonu</RootNamespace>
+    <AssemblyName>OtobusBiletOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\OneDrive\Masaüstü\AnaForm.cs">
+      <SubType>Form</SubType>
+      <Link>AnaForm.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\OneDrive\Masaüstü\AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+      <Link>AnaForm.Designer.cs</Link>
+    </Compile>
+    <Compile Include="AnaForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm1.Designer.cs">
+      <DependentUpon>AnaForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiletBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletBilgileri.Designer.cs">
+      <DependentUpon>BiletBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiletEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletEkle.Designer.cs">
+      <DependentUpon>BiletEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiletGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletGuncelle.Designer.cs">
+      <DependentUpon>BiletGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiletSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletSil.Designer.cs">
+      <DependentUpon>BiletSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSOtobusBiletOtomasyonu.cs">
+      <DependentUpon>DSOtobusBiletOtomasyonu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSOtobusBiletOtomasyonu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSOtobusBiletOtomasyonu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisEkrani.Designer.cs">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guzergah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guzergah.Designer.cs">
+      <DependentUpon>Guzergah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuzergahEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuzergahEkle.Designer.cs">
+      <DependentUpon>GuzergahEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuzergahGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuzergahGuncelle.Designer.cs">
+      <DependentUpon>GuzergahGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuzergahSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuzergahSil.Designer.cs">
+      <DependentUpon>GuzergahSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KoltukSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KoltukSec.Designer.cs">
+      <DependentUpon>KoltukSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odeme.Designer.cs">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdemeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdemeEkle.Designer.cs">
+      <DependentUpon>OdemeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdemeGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdemeGuncelle.Designer.cs">
+      <DependentUpon>OdemeGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdemeSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdemeSil.Designer.cs">
+      <DependentUpon>OdemeSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtobusBiletiOtomasyonuDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtobusBiletiOtomasyonuDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtobusBiletiOtomasyonuDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtobusBiletiOtomasyonuDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtobusBiletiOtomasyonuDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtobusBiletiOtomasyonuDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtobusBiletiOtomasyonuDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OtobusEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtobusEkle.Designer.cs">
+      <DependentUpon>OtobusEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtobusGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtobusGuncelle.Designer.cs">
+      <DependentUpon>OtobusGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otobusler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otobusler.Designer.cs">
+      <DependentUpon>Otobusler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtobusSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtobusSil.Designer.cs">
+      <DependentUpon>OtobusSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeferBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeferBilgileri.Designer.cs">
+      <DependentUpon>SeferBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeferEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeferEkle.Designer.cs">
+      <DependentUpon>SeferEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeferGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeferGuncelle.Designer.cs">
+      <DependentUpon>SeferGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeferSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeferSil.Designer.cs">
+      <DependentUpon>SeferSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YolcuBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YolcuBilgileri.Designer.cs">
+      <DependentUpon>YolcuBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YolcuEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YolcuEkle.Designer.cs">
+      <DependentUpon>YolcuEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YolcuGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YolcuGuncelle.Designer.cs">
+      <DependentUpon>YolcuGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YolcuSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YolcuSil.Designer.cs">
+      <DependentUpon>YolcuSil.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="..\..\..\OneDrive\Masaüstü\AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+      <Link>AnaForm.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaForm1.resx">
+      <DependentUpon>AnaForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiletBilgileri.resx">
+      <DependentUpon>BiletBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiletEkle.resx">
+      <DependentUpon>BiletEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiletGuncelle.resx">
+      <DependentUpon>BiletGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiletSil.resx">
+      <DependentUpon>BiletSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisEkrani.resx">
+      <DependentUpon>GirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guzergah.resx">
+      <DependentUpon>Guzergah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuzergahEkle.resx">
+      <DependentUpon>GuzergahEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuzergahGuncelle.resx">
+      <DependentUpon>GuzergahGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuzergahSil.resx">
+      <DependentUpon>GuzergahSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KoltukSec.resx">
+      <DependentUpon>KoltukSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odeme.resx">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdemeEkle.resx">
+      <DependentUpon>OdemeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdemeGuncelle.resx">
+      <DependentUpon>OdemeGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdemeSil.resx">
+      <DependentUpon>OdemeSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtobusEkle.resx">
+      <DependentUpon>OtobusEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtobusGuncelle.resx">
+      <DependentUpon>OtobusGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otobusler.resx">
+      <DependentUpon>Otobusler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtobusSil.resx">
+      <DependentUpon>OtobusSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SeferBilgileri.resx">
+      <DependentUpon>SeferBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeferEkle.resx">
+      <DependentUpon>SeferEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeferGuncelle.resx">
+      <DependentUpon>SeferGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeferSil.resx">
+      <DependentUpon>SeferSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YolcuBilgileri.resx">
+      <DependentUpon>YolcuBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YolcuEkle.resx">
+      <DependentUpon>YolcuEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YolcuGuncelle.resx">
+      <DependentUpon>YolcuGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YolcuSil.resx">
+      <DependentUpon>YolcuSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DSOtobusBiletOtomasyonu.xsc">
+      <DependentUpon>DSOtobusBiletOtomasyonu.xsd</DependentUpon>
+    </None>
+    <None Include="DSOtobusBiletOtomasyonu.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSOtobusBiletOtomasyonu.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSOtobusBiletOtomasyonu.xss">
+      <DependentUpon>DSOtobusBiletOtomasyonu.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet.xsc">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtobusBiletiOtomasyonuDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet.xss">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet1.xsc">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtobusBiletiOtomasyonuDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet1.xss">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet2.xsc">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtobusBiletiOtomasyonuDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet2.xss">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet3.xsc">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtobusBiletiOtomasyonuDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet3.xss">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet4.xsc">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtobusBiletiOtomasyonuDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet4.xss">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet5.xsc">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtobusBiletiOtomasyonuDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet5.xss">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet6.xsc">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OtobusBiletiOtomasyonuDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OtobusBiletiOtomasyonuDataSet6.xss">
+      <DependentUpon>OtobusBiletiOtomasyonuDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
